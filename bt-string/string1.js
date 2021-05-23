@@ -41,7 +41,7 @@
 // Kết quả trả về là 'Chào Mừng Đến Với Techmaster'
 
 // function titleCase(str) {
-//     var splitStr = str.toLowerCase().split(' ');
+//     let splitStr = str.toLowerCase().split(' ');
 //     for (let i = 0; i < splitStr.length; i++) {
 //         splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
 //     }
@@ -55,11 +55,82 @@
 // tác dụng sao chép đó chuỗi lên 10 lần.
 
 // function repeat(chane1, chane2) {
-//     var str = '';
+//     let str = prompt("Nhập vào 1 chuỗi kí tự bất kì");
+//     let loopResult = "";
+//     for (let i = 0; i < 10; i++) {
+//       loopResult += `${str}`;
+//     }
+//       return loopResult.slice(0, -1);
+//   }
+//   console.log(loopTheStringTenTimes());
+
+// Bài 5. Cho 1 chuỗi, hãy viết hàm có tác dụng
+//  sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang. 
+// Ví dụ: repeatString('a') 
+// => Kết quả trả về là 'a-a-a-a-a-a-a-a-a-a'
+
+// function loopTheStringTenTimes() {
+//     let str = prompt("Nhập vào 1 chuỗi kí tự bất kì");
+//     let loopResult = "";
+//     for (let i = 0; i < 10; i++) {
+//       loopResult += `${str}-`;
+//     }
+//       return loopResult.slice(0, -1);
+//   }
+//   console.log(loopTheStringTenTimes());
+
+// Bài 6. Cho 1 chuỗi và 1 số nguyên n > 1, 
+// hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần,
+//  ngăn cách nhau bởi dấu gạch ngang. 
+// Ví dụ: repeatString('a', 5) => Kết quả trả về là 'a-a-a-a-a'
+
+// function repeat(chane1, chane2) {
+//     let str = '';
 //     for (let i = 0; i < chane2; i++) {
 //       str += chane1;
 //     }
 //     return str;
 //   }
+// console.log(repeat("\lap lai nao\ - ",10));
 
-//   console.log(repeat("\lap lai nao\ - ",10));
+// Bài 7. Viết hàm đảo ngược chuỗi. Viết dunction với
+//  đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó
+// Ví dụ: reverseStrin('Hello') => Kết quả trả về là 'olleH'
+
+// function reverseString(str) {
+//    let splitString = str.split(""); 
+//    let reverseArray = splitString.reverse(); 
+//    let joinArray = reverseArray.join("");        
+//     return joinArray; // 
+// }
+// console.log(reverseString("hello"));  
+
+
+// Bài 8. Cho 1 chuỗi, kiểm tra
+//  xem chuỗi đó có phải chuỗi đối xứng hay không 
+//  (đọc xuôi hay ngược đều như nhau, không tính khoảng trắng, 
+//     không phân biệt hoa thường), kết quả trả về true hoặc false. 
+// Ví dụ 'Race car' trả về true, 'hello world' trả về false.
+
+// function isPalindrome(str) {
+//     let splitString = str.split(""); 
+//     for (let i = 0; i < splitString.length / 2; i++) {
+//         if (splitString[i] != splitString[str.length - i - 1]) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+ 
+// console.log(isPalindrome("hoang gnaoh"));
+// console.log(isPalindrome("hello world"));
+
+
+// Bài 9: Kiểm tra 1 chuỗi có phải là chuỗi viết hoa hay không?
+// function isFirstLetterCapital(string) {
+//     return string.charCodeAt(0) === string.toUpperCase().charCodeAt(0);
+//   }
+//   console.log(isFirstLetterCapital("hai i am hoang"));
+//   console.log(isFirstLetterCapital("I Am Hoang"));
+
+
